@@ -10,3 +10,21 @@ There is a significant increase in customers churning over the last 12 months. T
 1) Conduct exploratory Analysis to understand drivers of Churn
 2) Build an initial model to Identify customers likely to churn
 
+### Results:
+1) Feature importance refers to the importance of a feature in driving the outcome of churn for each of our respective models as shown above
+
+Across all models, Age appears to be the most important driver that impacts churn for our customers followed by their activity and number of products they possess
+![image](https://github.com/Subliminated/Churn-Modelling/assets/90996172/8aa7b11f-fc4f-46cc-ad0b-9f825e76b220)
+
+<img width="762" alt="image" src="https://github.com/Subliminated/Churn-Modelling/assets/90996172/ad861922-786e-4e5e-a8cd-35fb109806a2">
+
+
+2) Both Random Forest Models and Gradient Boosting Models show very good overall performance with a AUC ROC (Area under Curve) score of .95 and .93. High score means both models are very good at identifying customers who will churn.
+
+ Further, the models also have high recall and precision which is important because:
+- High Recall means lower likelihood of false negatives (we fail to identify churning customers) which is a bad outcome for retention
+- High Precision meaning lower likelihood of false positive (non-churning customers predicted as churning) which is costly to engage
+
+![image](https://github.com/Subliminated/Churn-Modelling/assets/90996172/eec359ee-bb9e-49b8-b19a-5ee70641c737)
+
+<img width="529" alt="image" src="https://github.com/Subliminated/Churn-Modelling/assets/90996172/c717b87d-24af-4f10-8758-68e0dbbc3b59">
